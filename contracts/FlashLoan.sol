@@ -1,14 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.10;
 
-// Import Aave's FlashLoanReceiverBase for implementing flash loan functionality in the contract.
+// import {FlashLoanSimpleReceiverBase} from "https://github.com/aave/aave-v3-core/blob/master/contracts/flashloan/base/FlashLoanSimpleReceiverBase.sol";
+// import {IPoolAddressesProvider} from "https://github.com/aave/aave-v3-core/blob/master/contracts/interfaces/IPoolAddressesProvider.sol";
+// import {IERC20} from "https://github.com/aave/aave-v3-core/blob/master/contracts/dependencies/openzeppelin/contracts/IERC20.sol";
 import {FlashLoanSimpleReceiverBase} from "@aave/core-v3/contracts/flashloan/base/FlashLoanSimpleReceiverBase.sol";
-
-// Import Aave's IPoolAddressesProvider interface for interacting with the Aave protocol.
 import {IPoolAddressesProvider} from "@aave/core-v3/contracts/interfaces/IPoolAddressesProvider.sol";
-
-// Import OpenZeppelin's ERC20 interface for interacting with ERC20 tokens.
 import {IERC20} from "@aave/core-v3/contracts/dependencies/openzeppelin/contracts/IERC20.sol";
+
 
 // This contract implements a flash loan receiver using Aave's V3 protocol.
 contract FlashLoan is FlashLoanSimpleReceiverBase {
